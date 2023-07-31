@@ -6,4 +6,4 @@ function addTodo() {
   )
 }
 
-export default addTodo
+export default addTodo;
