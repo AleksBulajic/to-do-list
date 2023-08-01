@@ -1,8 +1,11 @@
 import React from 'react'
 
-function addTodo() {
+let todoItems=[];
+
+function addTodo(text) {
+
   return (
-    <div>addTodo</div>
+    <div></div>
   )
 }
 
