@@ -5,7 +5,9 @@ let todoItems=[];
 function addTodo(text) {
 
   return (
-    <div></div>
+    <div>
+      <input className='input'></input>
+    </div>
   )
 }
 
