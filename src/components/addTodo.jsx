@@ -2,7 +2,7 @@ import React from 'react'
 
 let todoItems=[];
 
-function addTodo(text) {
+function AddTodo(text) {
 
   return (
     <div>
@@ -11,4 +11,4 @@ function addTodo(text) {
   )
 }
 
-export default addTodo;
+export default AddTodo;
