@@ -1,17 +1,25 @@
-import React from 'react';
-import Header from './components/Header';
-import AddTodo from './components/AddTodo'; 
+import React, { useState } from 'react';
+import AddTodo from './components/AddTodo';
 import List from './components/List';
-import "./App.css"
 
-function App() {
+function TodoApp() {
+  // State to manage todo items
+  const [todoItems, setTodoItems] = useState([]);
+
+  // Function to add a new item to the todo list
+  function addTodoItem(newItem) {
+    setTodoItems([...todoItems, newItem]);
+  }
+
   return (
-    <div className="App">
-      <Header />
-      <AddTodo/>
-      <List />
+    <div>
+      {/* Pass state and function as props to AddTodo */}
+      <AddTodo onAddTodo={addTodoItem} />
+
+      {/* Pass todoItems as a prop to List */}
+      <List todoItems={todoItems} />
     </div>
   );
 }
 
-export default App;
+export default TodoApp;
